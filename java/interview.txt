@@ -1,0 +1,103 @@
+/* define abstract class and abstract method with example.
+
+abstract class is a class that has at least one abstract method
+An abstract method is a method that does not have an implementation
+It is declared with the abstract keyword.
+An abstract class cannot be instantiated directly
+It is meant to be subclassed by other classes that provide implementations for the abstract methods
+
+example of abstract class
+abstract class Animal {
+    abstract void makeSound(); // abstract method
+    void eat() { // concrete method
+        System.out.println("This animal eats food.");
+    }
+}
+
+
+Q2. Partial abstraction 
+An abstract class can provide partial abstraction by having both abstract methods (without implementation) and concrete methods (with implementation)
+This allows subclasses to inherit common behavior while also being required to implement specific behaviors defined by the abstract methods
+example of partial abstraction
+abstract class Shape {
+    abstract double area(); // abstract method
+    void display() { // concrete method
+        System.out.println("This is a shape.");
+    }
+}
+
+Q3. why interface is different from abstract class in java
+1. Multiple Inheritance: A class can implement multiple interfaces, but it can only extend one abstract class.
+2. Method Implementation: An abstract class can have both abstract methods (without implementation) and concrete methods (with implementation)
+ In contrast, interfaces (prior to Java 8) could only have abstract methods
+ However, from Java 8 onwards, interfaces can also have default and static methods with implementations
+3. Fields: An abstract class can have instance variables (fields) with different access modifiers (private, protected, public)
+ In contrast, all fields in an interface are implicitly public, static, and final (constants)
+4. Constructors: An abstract class can have constructors, which can be called when a subclass is instantiated
+    In contrast, interfaces cannot have constructors because they cannot be instantiated directly
+5. Access Modifiers: Abstract class methods can have various access modifiers (private, protected, public)
+    In contrast, all methods in an interface are implicitly public
+example of interface
+interface Animal {
+    void makeSound(); // abstract method
+    void eat(); // abstract method
+}
+// Example implementation of the interface
+class Dog implements Animal {
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+    public void eat() {
+        System.out.println("The dog eats food.");
+    }
+}
+
+Q4. Singleton class in java with example
+A singleton class is a class that allows only one instance of itself to be created
+It provides a global point of access to that instance
+example of singleton class
+class Singleton {   
+    private static Singleton instance; // private static variable to hold the single instance
+
+    // private constructor to prevent instantiation from outside
+    private Singleton() {
+    }
+
+    // public static method to provide access to the instance
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton(); // create the instance if it doesn't exist
+        }
+        return instance; // return the single instance
+    }
+}
+
+Q5. What is encapsulation in java?
+Encapsulation is a fundamental concept in object-oriented programming (OOP)
+that involves bundling data (attributes) and methods (functions)
+that operate on that data into a single unit called a class
+It is the process of hiding the internal details of a class and exposing only the necessary information to the outside world
+This helps to protect the data from being modified or accessed in an unintended way
+example of encapsulation
+class BankAccount {
+    private double balance; // private variable to hold the account balance
+
+    public BankAccount(double initialBalance) {
+        balance = initialBalance;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+}
+
+Q6. What is Getter and Setter methods in java?
+Getter and setter methods are methods that provide access to the private fields of a class
+They allow you to read (get) and modify (set) the values of the fields
+Getter methods are used to retrieve the value of a field, while setter methods are used to modify the value of a field
+example of getter and setter methods
+*/
