@@ -37,7 +37,7 @@ class Footballer extends Sportsperson implements Player {
 
     @Override
     public void play() {
-        System.out.println(name + " is playing football.");
+        System.out.println(name + " is playing soccer.");
     }
 
     @Override
@@ -47,12 +47,18 @@ class Footballer extends Sportsperson implements Player {
 }
 public class PlayerSystem {
     public static void main(String[] args) {
-        Sportsperson cricketer = new Cricketer("Sachin Tendulkar");
+        Sportsperson cricketer = new Cricketer("MS Dhoni");
         cricketer.display();
         ((Player) cricketer).play();
 
-        Sportsperson footballer = new Footballer("Lionel Messi");
+        Sportsperson footballer = new Footballer("Cristiano Ronaldo");
         footballer.display();
         ((Player) footballer).play();
     }
 }
+
+// Output:
+// Cricketer Name: Sachin Tendulkar
+// Sachin Tendulkar is playing cricket.
+// Footballer Name: Lionel Messi
+// Lionel Messi is playing football.

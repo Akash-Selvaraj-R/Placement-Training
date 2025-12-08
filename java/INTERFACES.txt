@@ -24,3 +24,20 @@ Q5. What is the difference between extends and implements?
 Ans. The extends keyword is used to inherit properties and methods from a superclass
 The implements keyword is used to implement an interface in a class
 
+Q6. What is interface?
+Ans. An interface is a completely abstract class that contains only abstract methods and constants.
+It is used to achieve abstraction and multiple inheritance in Java.
+
+Q7. Can an abstract class implement an interface? and how?
+Ans. Yes, an abstract class can implement an interface
+An abstract class can implement multiple interfaces
+It is used to achieve multiple inheritance in Java.
+
+Q8. Can an interface extend another interface? and how?
+Ans. Yes, an interface can extend another interface
+It is used to achieve multiple inheritance in Java.
+It is used to achieve abstraction and multiple inheritance in Java
+
+Q9. is that possible to extend an interface from class?
+Ans. No, it is not possible to extend an interface from a class
+It is used to achieve multiple inheritance in Java.
