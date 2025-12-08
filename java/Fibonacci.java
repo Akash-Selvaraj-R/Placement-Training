@@ -1,10 +1,10 @@
 //Java simple prorgram for fibonacci using recursion method
 
 import java.util.Scanner;
-public class Fibonacci() {
+public class Fibonacci{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.printLn("Enter the number:");
+        System.out.println("Enter the number:");
         int n = sc.nextInt();
         System.out.println("Fibonacci : " + fibonacci(n));
         sc.close();

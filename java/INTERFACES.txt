@@ -1,0 +1,26 @@
+INTERFACES
+
+Qn. Is java support multiple inheritance?
+Ans. No, Java does not support multiple inheritance
+However, it does support interfaces, which can be used to achieve similar functionality
+
+Qn. What is the difference between interface and abstract class?
+Ans. An interface is a completely abstract class that contains only abstract methods and constants.
+An abstract class is a class that contains both abstract and non-abstract methods.
+An interface can be implemented by a class, while an abstract class can be extended by a class
+
+Q3. a class can extend to  class
+a class can implement a interface
+a interface can extend to interface
+then what is for interface to class?
+Ans. A class can implement multiple interfaces, while an interface can extend other interfaces.
+
+Q4. What is inheritance?
+Ans. Inheritance is a mechanism in object-oriented programming that allows a class
+to inherit properties and methods from another class
+It enables code reusability
+
+Q5. What is the difference between extends and implements?
+Ans. The extends keyword is used to inherit properties and methods from a superclass
+The implements keyword is used to implement an interface in a class
+
