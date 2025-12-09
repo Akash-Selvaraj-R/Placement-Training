@@ -1,0 +1,42 @@
+/*
+java tips
+
+psvm
+
+public static void main(String[] args) {
+    // code here
+}
+sopl
+System.out.println("Hello, World!");
+
+soutvar
+System.out.println("variableName = " + variableName);
+
+fori
+for (int i = 0; i < n; i++) {
+    // code here
+}
+iter
+for (Type item : collection) {
+    // code here
+}
+itar
+for (int i = 0; i < collection.size(); i++) {
+    Type item = collection.get(i);
+    // code here
+}
+ifn
+if (variable == null) {
+    // code here
+}
+inn
+if (variable != null) {
+    // code here
+}
+trycatch
+try {
+    // code here
+} catch (ExceptionType e) {
+    // exception handling code here
+}
+*/

@@ -1,0 +1,22 @@
+
+Qn.1 how encapsulation is achieved in java?
+
+Ans: Encapsulation is achieved by making the class private and providing public methods to access and modify the private members. This is done by using access modifiers such as private, public, protected, and default.
+
+Qn.2 Can u access private members of a class outside the class?
+
+Ans: No, we cannot access private members of a class outside the class in Java
+Private members are only accessible within the class itself.
+
+Qn.3 Can a class be encapsulated without any getter and setter methods?
+
+Ans: No, a class cannot be encapsulated without getter and setter methods
+Getter and setter methods are used to access and modify the private members of a class.
+
+Qn.4 Write a program to encapsulate the class Student!
+
+Ans:
+public class Student {
+    private String name;
+    private Int age;
+    private String rollNumber;

@@ -1,0 +1,48 @@
+/* */
+Qn1. tell me how the constructor can be invoked in class and default constructor, and a parameerized constructor and what is super()
+
+solution:
+class A{
+    A(){
+        System.out.println("default constructor");
+    }
+    A(int a){
+        System.out.println("parameterized constructor");
+    }
+    public static void main(String[] args) {
+        A a = new A();
+        A a1 = new A(10);
+    }
+} 
+
+Qn2. what if i use super() method to call the consstructor for above code?
+//Solution
+
+If you use `super()` in the constructor of a subclass, it will call the constructor of the superclass
+This is useful when you want to initialize the superclass part of an object before executing the subclass's constructor logic
+Here's how you can modify the previous code to include a superclass and use `super()`:
+```java
+class SuperClass {
+    SuperClass() {
+        System.out.println("SuperClass default constructor");
+    }
+}
+class A extends SuperClass {
+    A() {
+        super(); // Calls the superclass constructor
+        System.out.println("A default constructor");
+    }
+    
+    A(int a) {
+        super(); // Calls the superclass constructor
+        System.out.println("A parameterized constructor with value: " + a);
+    }
+    
+    public static void main(String[] args) {
+        A a = new A();
+        A a1 = new A(10);
+    }
+}
+```
+
+
