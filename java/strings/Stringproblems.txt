@@ -1,0 +1,78 @@
+Qn.1 check two strings are anagram or not
+
+class Anagram{
+    public static void main(String[] args) {
+        String s1="listen";
+        String s2="silent";
+        if(s1.length()!=s2.length()){
+            System.out.println("not anagram");
+        }
+        else{
+            char[] ch1=s1.toCharArray();
+            char[] ch2=s2.toCharArray();
+            Arrays.sort(ch1);
+            Arrays.sort(ch2);
+            if(Arrays.equals(ch1,ch2)){
+                System.out.println("anagram");
+            }
+            else{
+                System.out.println("not anagram");
+            }
+        }
+    }
+}
+Qn.2 lexographical order
+
+class lexographical{
+    public static void main(String[] args) {
+        String s1="geeksforgeeks";
+        String s2="forgeeksgeeks";
+        if(s1.compareTo(s2)==0){
+            System.out.println("equal");
+        }
+        else if(s1.compareTo(s2)>0){
+            System.out.println("lexographical order");
+        }
+        else{
+            System.out.println("not lexographical order");
+        }
+    }
+}
+
+Qn.3 total no of character in strings
+
+class count{
+    public static void main(String[] args) {
+        String s1="geeksforgeeks";
+        int count=0;
+        for(int i=0;i<s1.length();i++){
+            count++;
+        }
+        System.out.println(count);
+    }
+}
+
+Qn.4 count the frequency of each character
+
+class count{
+    public static void main(String[] args) {
+        String s1="geeksforgeeks";
+        int count=0;
+        for(int i=0;i<s1.length();i++){
+            if(s1.charAt(i)=='e'){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+
+Qn.5 count no of spaces in string
+Qn.6 remove akk duplicates from string
+Qn.7 check plaindrome 
+Qn.8 count vowels and consonants
+Qn.9 longest word in string
+Qn.10 count upper case and lower case
+Qn.11 reversing the string
+Qn.12 count the no. number, letter, and special character
+Qn.13 check two strings are equal
