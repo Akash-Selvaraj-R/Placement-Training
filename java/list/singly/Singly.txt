@@ -1,6 +1,0 @@
-Qn.1 how temp variable works in singly linked list in java?
-
-Ans.1. In singly linked list,
-a temporary variable is used to store the value of the current node while traversing the list
-This is necessary because the next pointer of the current node is updated to point to the next node in the list
-
