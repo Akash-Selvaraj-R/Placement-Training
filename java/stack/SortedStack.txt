@@ -1,0 +1,72 @@
+explain line by line
+
+1. Stack<Integer> input = new Stack<>(); 
+    - create a stack to store the input numbers
+
+2. input.push(34);
+    - push the first number into the stack
+
+3. input.push(3);
+    - push the second number into the stack
+
+4. input.push(31);
+    - push the third number into the stack
+
+5. input.push(98);
+    - push the fourth number into the stack
+
+6. input.push(92);
+    - push the fifth number into the stack
+
+7. input.push(23);
+    - push the sixth number into the stack
+
+8. System.out.println("orginal: " + input);
+    - print the original stack
+    - output: orginal: [23, 92, 98, 31, 3, 34]
+
+9. sortStack(input);
+    - call the sortStack method to sort the stack
+
+10. System.out.println("sorted: " + input);
+    - print the sorted stack
+    - output: sorted: [3, 31, 23, 92, 98, 34]
+
+11. public static void sortStack(Stack<Integer> input) {
+    - create a new stack to store the sorted numbers
+    - create a while loop to iterate through the input stack
+    - create a variable current to store the current number being processed
+    - create a while loop to iterate through the sorted stack
+
+12. while (!s.isEmpty() && s.peek() > current) {
+    - while the sorted stack is not empty and the top of the sorted stack is greater than the current number
+    - pop the top of the sorted stack and push
+    - it will ensure that the sorted stack is in ascending order
+
+13. s.push(current);
+    - push the current number into the sorted stack
+
+14. while (!s.isEmpty()) {
+    - while the sorted stack is not empty
+    - pop the top of the sorted stack and push it back to the input stack
+
+15. input.push(s.pop());
+    - pop the top of the sorted stack and push it back to the input stack
+
+16. return;
+    - return from the method
+
+17. public static void main(String[] args) {
+    - create a new stack to store the input numbers
+    - push the numbers into the stack
+
+18. Stack<Integer> s = new Stack<>(); 
+    - create a new stack to store the sorted numbers
+    - create a while loop to iterate through the input stack
+    - create a variable current to store the current number being processed
+    - create a while loop to iterate through the sorted stack
+    - call the sortStack method to sort the stack
+
+19. System.out.println("sorted: " + input);
+    - print the sorted stack
+    - output: sorted: [3, 31, 23, 92, 98, 34]
