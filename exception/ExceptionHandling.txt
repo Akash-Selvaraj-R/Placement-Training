@@ -1,0 +1,42 @@
+Qn1 what is exception handling in java?
+Ans: Exception handling is a mechanism in Java that allows you to handle runtime errors or exceptions that may occur during the execution of your program. It helps you to gracefully handle errors and prevent your program from crashing.
+
+Qn2 what is throwable in java?
+Ans: Throwable is a class in Java that represents a runtime exception or error. It is the superclass of all exceptions and errors in Java. All exceptions and errors in Java must be a subclass of Throwable
+
+Qn3 what are exception and error in java?
+Ans: Exceptions are runtime errors that occur during the execution of a program. They are usually caused by invalid input, incorrect data types, or other programming errors. Errors are also runtime errors, but they are more severe and indicate a problem with the program itself, such as a syntax error or a logical error
+
+
+Super Simple Way to Understand Java Exceptions (Like You're 10 Years Old)
+Imagine your Java program is a robot that follows instructions.
+Sometimes the robot can face problems. Java groups these problems into 3 big buckets:
+Bucket 1: Error ⚠️ (Yellow ones)
+→ "The world is ending!"
+Examples:
+
+No more battery/memory (OutOfMemoryError)
+Robot brain crashed (VirtualMachineError)
+Infinite loop making it tired (StackOverflowError)
+
+What to do? → Nothing! Just let the robot stop and call the engineer.
+You don’t write code to fix these in normal apps.
+Bucket 2: RuntimeException (Orange/Red ones – "Silly Mistakes")
+→ "You told the robot something stupid!"
+Examples:
+
+"Touch your nose" but the robot has no nose → NullPointerException ★★★ (most common!)
+"Take step number 99" but robot only has 10 steps → ArrayIndexOutOfBoundsException
+"Divide 10 by 0" → ArithmeticException
+
+These are YOUR coding mistakes.
+Java says: "I won’t force you to fix it now, but your program will crash if you don’t."
+Bucket 3: Checked Exceptions (Pink/Blue ones – "Expected Problems")
+→ "Something outside the robot might go wrong"
+Examples:
+
+"Open this file" → but file is missing → FileNotFoundException
+"Talk to the internet" → but Wi-Fi is down → IOException
+"Connect to the database" → but database is down → SQLException
+
+That’s it!

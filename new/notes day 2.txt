@@ -1,0 +1,65 @@
+from ctypes.macholib import framework
+from email.mime import application
+from pyexpat import features
+from sys import modules
+
+
+three tier architecture 
+frontend - the ui and ux 
+backend - api and services
+database - manage and create 
+
+Qn 1 what is frontend?
+Frontend refers to the part of a software application or website that users interact with directly
+It encompasses the user interface (UI) and user experience (UX) design, which includes the layout,
+visual elements, and overall look and feel of the application.
+The frontend is responsible for presenting data to the user and capturing user input, 
+which is then sent to the backend for processing. 
+Common technologies used in frontend development include HTML, CSS, JavaScript, and various frameworks like React, Angular, and Vue.js.
+
+
+Qn 2 what is backend?
+Backend refers to the server-side of a software application or website that handles the logic, database interactions, and overall functionality that is not visible to the user.
+The backend is responsible for processing user requests, managing data, and ensuring that the application runs smoothly.
+It typically includes components such as servers, databases, and application logic.
+Common technologies used in backend development include programming languages like Python, Java, Ruby, and Node.js, as well as frameworks like Django, Spring, and Express.js.
+
+
+Qn 3 what is database?
+A database is an organized collection of data that is stored and accessed electronically.
+It allows for the efficient storage, retrieval, and management of data.
+Databases are used in various applications to store information such as user data, product details, and transaction records.
+There are different types of databases, including relational databases (e.g., MySQL, PostgreSQL) 
+that use structured query language (SQL) 
+for managing data, and NoSQL databases (e.g., MongoDB, Cassandra) 
+that are designed for unstructured data and scalability.
+
+Qn 4 what is three tier architecture?
+Three-tier architecture is a software design pattern that separates an application into three distinct layers or tiers:
+1. Presentation Tier (Frontend): This layer is responsible for the user interface and user experience. 
+It interacts with the user and displays data from the backend. It can be built using technologies like HTML, CSS, JavaScript, and frontend frameworks.
+2. Logic Tier (Backend): This layer contains the business logic and application processing. It handles the core functionality of the application, processes user requests, and interacts with the database. It can be developed using programming languages like Python, Java, or Node.js.
+3. Data Tier (Database): This layer is responsible for data storage and management. It includes the database system that stores and retrieves data as needed by the backend. It can be implemented using relational databases like MySQL or NoSQL databases like MongoDB.
+The three-tier architecture promotes separation of concerns, making it easier to manage and scale applications. Each tier can be developed, maintained, and updated independently, allowing for greater flexibility and scalability in software development.
+
+extremly important intervew questions
+
+1) what is springboot?
+Spring Boot is an open-source Java-based framework that is used to create stand-alone, 
+production-grade Spring applications with minimal configuration. 
+It is built on top of the Spring Framework and provides a simplified and opinionated approach to application development.
+Spring Boot eliminates the need for extensive configuration by providing default settings and auto-configuration features.
+    
+2) Spring vs Spring Boot?
+Spring is a comprehensive framework for building Java applications, 
+while Spring Boot is a specific module within the Spring ecosystem that focuses on simplifying the development of Spring applications.
+Spring provides a wide range of features and modules for various aspects of application development, such as dependency injection, aspect-oriented programming, and data access.
+
+Spring Boot, on the other hand, is designed to streamline the development process by providing a set of conventions and defaults that allow developers to quickly create and deploy Spring applications without needing to configure every aspect of the application manually.
+
+3) what is boilerplate code?
+Boilerplate code refers to sections of code that are repeated in multiple places with little to no variation.
+
+3) springboot philosophy?
+convention over configuration - Spring Boot follows the principle of "convention over configuration," which means that it provides sensible defaults and conventions for application development, reducing the need for explicit configuration.
+    

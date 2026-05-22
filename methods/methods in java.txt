@@ -1,0 +1,65 @@
+/* types of methods in java 
+1. instance method
+2. static method
+3. user defined method
+4. predefined method
+5. parameterized method
+6. non-parameterized method
+a line definition for each method type:
+1. Instance Method: A method that belongs to an instance of a class and can access instance variables.
+2. Static Method: A method that belongs to the class itself and can be called without creating an instance of the class.
+3. User Defined Method: A method that is created by the programmer to perform a specific task.
+4. Predefined Method: A method that is provided by the Java API for common tasks, such as String methods.
+5. Parameterized Method: A method that accepts parameters (arguments) to perform operations based on the input values.
+6. Non-Parameterized Method: A method that does not accept any parameters and performs a specific task without any input.
+
+
+//simple examples for java methods mentioned above and give me explanation for each example:
+
+```java
+public class Example {
+    // Instance Method
+    public void instanceMethod() {
+        System.out.println("This is an instance method.");
+    }
+
+    // Static Method
+    public static void staticMethod() {
+        System.out.println("This is a static method.");
+    }  
+    // User Defined Method
+    public void userDefinedMethod() {
+        System.out.println("This is a user defined method.");
+    }
+    // Predefined Method
+    public void predefinedMethod() {
+        String str = "Hello, World!";
+        System.out.println("Length of the string is: " + str.length());
+    }
+    // Parameterized Method
+    public void parameterizedMethod(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+    // Non-Parameterized Method
+    public void nonParameterizedMethod() {
+        System.out.println("This is a non-parameterized method.");
+    }
+}
+
+
+Qn.1 Tell me how static method is different from instance method in java?
+
+A static method belongs to the class itself, not to any specific instance of the class
+It can be called without creating an instance of the class
+Static methods are often used for utility functions or methods that don't require any instance variables
+They can only directly access other static members (variables or methods) of the class
+example:
+```java
+public class StaticExample {
+    public static void staticMethod() {
+        System.out.println("This is a static method.");
+    }
+}
+StaticExample.staticMethod(); // Calling static method without creating an instance
+
+*/
